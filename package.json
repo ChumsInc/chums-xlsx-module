@@ -1,0 +1,58 @@
+{
+  "name": "chums-local-modules",
+  "version": "3.0.1",
+  "description": "modules shared across chums node server instances",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "src": "./lib/index.ts",
+  "scripts": {
+    "build": "npm run clean && npm run build-ts",
+    "build-ts": "tsc",
+    "clean": "rimraf dist types",
+    "start": "node --watch index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "auto-changelog -p && git add CHANGELOG.md"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChumsInc/chums-local-modules.git"
+  },
+  "author": "Steve Montgomery",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChumsInc/chums-local-modules/issues"
+  },
+  "homepage": "https://github.com/ChumsInc/chums-local-modules#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@tsconfig/node26": "^26.0.1",
+    "@types/debug": "^4.1.7",
+    "@types/node": "^26.0.0",
+    "auto-changelog": "^2.4.0",
+    "eslint": "^10.0.0",
+    "globals": "^17.1.0",
+    "mysql2": ">=3.9.7",
+    "rimraf": "^6.0.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.8.0"
+  },
+  "typings": "./dist/index.d.ts",
+  "dependencies": {
+    "debug": "^4.3.3",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  },
+  "peerDependencies": {
+    "mysql2": ">=3.9.7"
+  },
+  "peerDependenciesMeta": {
+    "mysql2": {
+      "optional": true
+    }
+  },
+  "auto-changelog": {
+    "template": "./changelog-template.hbs",
+    "unreleased": true,
+    "commitLimit": false
+  }
+}
