@@ -1,5 +1,5 @@
 {
-  "name": "chums-local-modules",
+  "name": "chums-xlsx-module",
   "version": "3.0.1",
   "description": "modules shared across chums node server instances",
   "main": "./dist/index.js",
@@ -16,14 +16,14 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChumsInc/chums-local-modules.git"
+    "url": "git+https://github.com/ChumsInc/chums-xlsx-module.git"
   },
   "author": "Steve Montgomery",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ChumsInc/chums-local-modules/issues"
+    "url": "https://github.com/ChumsInc/chums-xlsx-module/issues"
   },
-  "homepage": "https://github.com/ChumsInc/chums-local-modules#readme",
+  "homepage": "https://github.com/ChumsInc/chums-xlsx-module#readme",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@tsconfig/node26": "^26.0.1",
